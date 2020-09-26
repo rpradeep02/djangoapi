@@ -43,12 +43,14 @@
       <h2>Generate a random user</h2>
       <p style="margin-top:20px;">Click the below button to generate a user.</p>
         <a href="http://localhost:8000/add" class="btn btn-primary" style="margin: 40px 20px 0 0;">Create New User</a>
+        <a href="http://pradeep0228.pythonanywhere.com/" class="btn btn-primary" style="margin: 40px 20px 0 0;">Create New User</a>
     </div>
 
     <div class="block" style="margin: 20px 0;">
       <h2>Display All Users</h2>
       <p style="margin-top:20px;">Click the below button to display the list of all users.</p>
        <a href="http://localhost:8000/all" class="btn btn-secondary" style="margin-top: 40px;">Display All Users</a>
+       <a href="http://pradeep0228.pythonanywhere.com/" class="btn btn-secondary" style="margin-top: 40px;">Display All Users</a>
     </div>
 
     <form method="POST"id="myForm" class="form" style="margin-top: 60px">
@@ -75,6 +77,7 @@
     e.preventDefault();
 
     console.log(nameInput.value);    
+    window.location.href = 'http://pradeep0228.pythonanywhere.com/'+nameInput.value;
 
 });
     </script>
