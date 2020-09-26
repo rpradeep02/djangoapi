@@ -58,7 +58,7 @@ def add_user(request):
         try:
             user.save()
             activity_period.save()
-            response = json.dumps([{ 'Success': 'User added successfully!'}])
+            response = json.dumps([{ 'User added successfully! -' : code}])
         except:
             response = json.dumps([{ 'Error': 'User could not be added!'}])
     return HttpResponse(response, content_type='text/json')
